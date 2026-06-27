@@ -40,7 +40,8 @@ export const complaintAPI = {
   getById: (id) => api.get(`/complaints/${id}`),
   delete:  (id) => api.delete(`/complaints/${id}`),
   getStats: () => api.get('/complaints/stats'),
-  imageUrl: (fileName) => `/api/complaints/images/${fileName}`,
+  imageUrl: (fileName) =>
+  `https://studentcomplaintmanagementsystem-backend.onrender.com/api/complaints/images/${fileName}`,
 }
 
 // ---- Admin ----
